@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kcodecs
-Version  : 5.51.0
-Release  : 9
-URL      : https://download.kde.org/stable/frameworks/5.51/kcodecs-5.51.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.51/kcodecs-5.51.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.51/kcodecs-5.51.0.tar.xz.sig
+Version  : 5.52.0
+Release  : 10
+URL      : https://download.kde.org/stable/frameworks/5.52/kcodecs-5.52.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.52/kcodecs-5.52.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.52/kcodecs-5.52.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0 LGPL-2.1
@@ -26,6 +26,14 @@ String encoding library
 ## Introduction
 KCodecs provide a collection of methods to manipulate strings using various
 encodings.
+
+%package abi
+Summary: abi components for the kcodecs package.
+Group: Default
+
+%description abi
+abi components for the kcodecs package.
+
 
 %package data
 Summary: data components for the kcodecs package.
@@ -65,14 +73,14 @@ license components for the kcodecs package.
 
 
 %prep
-%setup -q -n kcodecs-5.51.0
+%setup -q -n kcodecs-5.52.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1539634920
+export SOURCE_DATE_EPOCH=1541866255
 mkdir -p clr-build
 pushd clr-build
 %cmake ..
@@ -80,7 +88,7 @@ make  %{?_smp_mflags} VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1539634920
+export SOURCE_DATE_EPOCH=1541866255
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kcodecs
 cp COPYING %{buildroot}/usr/share/package-licenses/kcodecs/COPYING
@@ -92,12 +100,15 @@ popd
 %files
 %defattr(-,root,root,-)
 
+%files abi
+%defattr(-,root,root,-)
+/usr/share/abi/libKF5Codecs.so.5.52.0.abi
+
 %files data
 %defattr(-,root,root,-)
 /usr/share/locale/af/LC_MESSAGES/kcodecs5_qt.qm
 /usr/share/locale/ar/LC_MESSAGES/kcodecs5_qt.qm
 /usr/share/locale/as/LC_MESSAGES/kcodecs5_qt.qm
-/usr/share/locale/ast/LC_MESSAGES/kcodecs5_qt.qm
 /usr/share/locale/be/LC_MESSAGES/kcodecs5_qt.qm
 /usr/share/locale/be@latin/LC_MESSAGES/kcodecs5_qt.qm
 /usr/share/locale/bg/LC_MESSAGES/kcodecs5_qt.qm
@@ -218,7 +229,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5Codecs.so.5
-/usr/lib64/libKF5Codecs.so.5.51.0
+/usr/lib64/libKF5Codecs.so.5.52.0
 
 %files license
 %defattr(0644,root,root,0755)
