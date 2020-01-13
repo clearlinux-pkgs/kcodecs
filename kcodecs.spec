@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kcodecs
-Version  : 5.65.0
-Release  : 28
-URL      : https://download.kde.org/stable/frameworks/5.65/kcodecs-5.65.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.65/kcodecs-5.65.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.65/kcodecs-5.65.0.tar.xz.sig
+Version  : 5.66.0
+Release  : 29
+URL      : https://download.kde.org/stable/frameworks/5.66/kcodecs-5.66.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.66/kcodecs-5.66.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.66/kcodecs-5.66.0.tar.xz.sig
 Summary  : Provide a collection of methods to manipulate strings using various encodings
 Group    : Development/Tools
 License  : GPL-2.0 LGPL-2.1
@@ -67,15 +67,15 @@ license components for the kcodecs package.
 
 
 %prep
-%setup -q -n kcodecs-5.65.0
-cd %{_builddir}/kcodecs-5.65.0
+%setup -q -n kcodecs-5.66.0
+cd %{_builddir}/kcodecs-5.66.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1576513477
+export SOURCE_DATE_EPOCH=1578931850
 mkdir -p clr-build
 pushd clr-build
 # -Werror is for werrorists
@@ -92,11 +92,11 @@ make  %{?_smp_mflags}  VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1576513477
+export SOURCE_DATE_EPOCH=1578931850
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kcodecs
-cp %{_builddir}/kcodecs-5.65.0/COPYING %{buildroot}/usr/share/package-licenses/kcodecs/7c203dee3a03037da436df03c4b25b659c073976
-cp %{_builddir}/kcodecs-5.65.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/kcodecs/9a1929f4700d2407c70b507b3b2aaf6226a9543c
+cp %{_builddir}/kcodecs-5.66.0/COPYING %{buildroot}/usr/share/package-licenses/kcodecs/7c203dee3a03037da436df03c4b25b659c073976
+cp %{_builddir}/kcodecs-5.66.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/kcodecs/9a1929f4700d2407c70b507b3b2aaf6226a9543c
 pushd clr-build
 %make_install
 popd
@@ -229,7 +229,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5Codecs.so.5
-/usr/lib64/libKF5Codecs.so.5.65.0
+/usr/lib64/libKF5Codecs.so.5.66.0
 
 %files license
 %defattr(0644,root,root,0755)
