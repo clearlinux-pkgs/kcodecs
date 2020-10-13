@@ -5,14 +5,14 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kcodecs
-Version  : 5.73.0
-Release  : 36
-URL      : https://download.kde.org/stable/frameworks/5.73/kcodecs-5.73.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.73/kcodecs-5.73.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.73/kcodecs-5.73.0.tar.xz.sig
+Version  : 5.75.0
+Release  : 37
+URL      : https://download.kde.org/stable/frameworks/5.75/kcodecs-5.75.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.75/kcodecs-5.75.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.75/kcodecs-5.75.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
-License  : GPL-2.0 LGPL-2.1
+License  : BSD-3-Clause GPL-2.0 LGPL-2.0 LGPL-2.1 MIT
 Requires: kcodecs-data = %{version}-%{release}
 Requires: kcodecs-lib = %{version}-%{release}
 Requires: kcodecs-license = %{version}-%{release}
@@ -68,15 +68,15 @@ license components for the kcodecs package.
 
 
 %prep
-%setup -q -n kcodecs-5.73.0
-cd %{_builddir}/kcodecs-5.73.0
+%setup -q -n kcodecs-5.75.0
+cd %{_builddir}/kcodecs-5.75.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1597695770
+export SOURCE_DATE_EPOCH=1602611306
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -92,11 +92,15 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1597695770
+export SOURCE_DATE_EPOCH=1602611306
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kcodecs
-cp %{_builddir}/kcodecs-5.73.0/COPYING %{buildroot}/usr/share/package-licenses/kcodecs/7c203dee3a03037da436df03c4b25b659c073976
-cp %{_builddir}/kcodecs-5.73.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/kcodecs/9a1929f4700d2407c70b507b3b2aaf6226a9543c
+cp %{_builddir}/kcodecs-5.75.0/LICENSES/BSD-3-Clause.txt %{buildroot}/usr/share/package-licenses/kcodecs/9950d3fdce1cff1f71212fb5abd31453c6ee2f8c
+cp %{_builddir}/kcodecs-5.75.0/LICENSES/GPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/kcodecs/e712eadfab0d2357c0f50f599ef35ee0d87534cb
+cp %{_builddir}/kcodecs-5.75.0/LICENSES/LGPL-2.0-only.txt %{buildroot}/usr/share/package-licenses/kcodecs/20079e8f79713dce80ab09774505773c926afa2a
+cp %{_builddir}/kcodecs-5.75.0/LICENSES/LGPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/kcodecs/20079e8f79713dce80ab09774505773c926afa2a
+cp %{_builddir}/kcodecs-5.75.0/LICENSES/LGPL-2.1-or-later.txt %{buildroot}/usr/share/package-licenses/kcodecs/6f1f675aa5f6a2bbaa573b8343044b166be28399
+cp %{_builddir}/kcodecs-5.75.0/LICENSES/MIT.txt %{buildroot}/usr/share/package-licenses/kcodecs/a0193e3fccf86c17dc71e3f6c0ac0b535e06bea3
 pushd clr-build
 %make_install
 popd
@@ -231,9 +235,12 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5Codecs.so.5
-/usr/lib64/libKF5Codecs.so.5.73.0
+/usr/lib64/libKF5Codecs.so.5.75.0
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/kcodecs/7c203dee3a03037da436df03c4b25b659c073976
-/usr/share/package-licenses/kcodecs/9a1929f4700d2407c70b507b3b2aaf6226a9543c
+/usr/share/package-licenses/kcodecs/20079e8f79713dce80ab09774505773c926afa2a
+/usr/share/package-licenses/kcodecs/6f1f675aa5f6a2bbaa573b8343044b166be28399
+/usr/share/package-licenses/kcodecs/9950d3fdce1cff1f71212fb5abd31453c6ee2f8c
+/usr/share/package-licenses/kcodecs/a0193e3fccf86c17dc71e3f6c0ac0b535e06bea3
+/usr/share/package-licenses/kcodecs/e712eadfab0d2357c0f50f599ef35ee0d87534cb
