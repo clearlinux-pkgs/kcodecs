@@ -7,7 +7,7 @@
 #
 Name     : kcodecs
 Version  : 5.106.0
-Release  : 69
+Release  : 70
 URL      : https://download.kde.org/stable/frameworks/5.106/kcodecs-5.106.0.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/5.106/kcodecs-5.106.0.tar.xz
 Source1  : https://download.kde.org/stable/frameworks/5.106/kcodecs-5.106.0.tar.xz.sig
@@ -80,7 +80,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1684793788
+export SOURCE_DATE_EPOCH=1685564987
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -113,7 +113,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1684793788
+export SOURCE_DATE_EPOCH=1685564987
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kcodecs
 cp %{_builddir}/kcodecs-%{version}/LICENSES/BSD-3-Clause.txt %{buildroot}/usr/share/package-licenses/kcodecs/9950d3fdce1cff1f71212fb5abd31453c6ee2f8c || :
@@ -242,7 +242,6 @@ popd
 
 %files dev
 %defattr(-,root,root,-)
-/V3/usr/lib64/libKF5Codecs.so
 /usr/include/KF5/KCodecs/KCharsets
 /usr/include/KF5/KCodecs/KCodecs
 /usr/include/KF5/KCodecs/KEmailAddress
@@ -262,7 +261,6 @@ popd
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libKF5Codecs.so.5
 /V3/usr/lib64/libKF5Codecs.so.5.106.0
 /usr/lib64/libKF5Codecs.so.5
 /usr/lib64/libKF5Codecs.so.5.106.0
