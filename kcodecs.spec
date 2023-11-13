@@ -8,11 +8,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kcodecs
-Version  : 5.111.0
-Release  : 75
-URL      : https://download.kde.org/stable/frameworks/5.111/kcodecs-5.111.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.111/kcodecs-5.111.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.111/kcodecs-5.111.0.tar.xz.sig
+Version  : 5.112.0
+Release  : 76
+URL      : https://download.kde.org/stable/frameworks/5.112/kcodecs-5.112.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.112/kcodecs-5.112.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.112/kcodecs-5.112.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause CC0-1.0 GPL-2.0 LGPL-2.0 LGPL-2.1 MIT MPL-1.1
@@ -74,15 +74,15 @@ license components for the kcodecs package.
 
 
 %prep
-%setup -q -n kcodecs-5.111.0
-cd %{_builddir}/kcodecs-5.111.0
+%setup -q -n kcodecs-5.112.0
+cd %{_builddir}/kcodecs-5.112.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1698091997
+export SOURCE_DATE_EPOCH=1699885236
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -141,7 +141,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1698091997
+export SOURCE_DATE_EPOCH=1699885236
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kcodecs
 cp %{_builddir}/kcodecs-%{version}/LICENSES/BSD-3-Clause.txt %{buildroot}/usr/share/package-licenses/kcodecs/9950d3fdce1cff1f71212fb5abd31453c6ee2f8c || :
@@ -289,9 +289,9 @@ popd
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libKF5Codecs.so.5.111.0
+/V3/usr/lib64/libKF5Codecs.so.5.112.0
 /usr/lib64/libKF5Codecs.so.5
-/usr/lib64/libKF5Codecs.so.5.111.0
+/usr/lib64/libKF5Codecs.so.5.112.0
 
 %files license
 %defattr(0644,root,root,0755)
