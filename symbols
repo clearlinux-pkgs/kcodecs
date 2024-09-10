@@ -1,85 +1,85 @@
-libKF6Codecs.so.6:_ZN13KEmailAddress12compareEmailERK7QStringS2_b
-libKF6Codecs.so.6:_ZN13KEmailAddress12splitAddressERK10QByteArrayRS0_S3_S3_
-libKF6Codecs.so.6:_ZN13KEmailAddress12splitAddressERK7QStringRS0_S3_S3_
-libKF6Codecs.so.6:_ZN13KEmailAddress14isValidAddressERK7QString
-libKF6Codecs.so.6:_ZN13KEmailAddress15decodeMailtoUrlERK4QUrl
-libKF6Codecs.so.6:_ZN13KEmailAddress15encodeMailtoUrlERK7QString
-libKF6Codecs.so.6:_ZN13KEmailAddress16splitAddressListERK7QString
-libKF6Codecs.so.6:_ZN13KEmailAddress17firstEmailAddressERK10QByteArray
-libKF6Codecs.so.6:_ZN13KEmailAddress17firstEmailAddressERK10QByteArrayR7QString
-libKF6Codecs.so.6:_ZN13KEmailAddress17firstEmailAddressERK7QString
-libKF6Codecs.so.6:_ZN13KEmailAddress17firstEmailAddressERK7QStringRS0_
-libKF6Codecs.so.6:_ZN13KEmailAddress17normalizedAddressERK7QStringS2_S2_
-libKF6Codecs.so.6:_ZN13KEmailAddress18isValidAddressListERK7QStringRS0_
-libKF6Codecs.so.6:_ZN13KEmailAddress19extractEmailAddressERK10QByteArray
-libKF6Codecs.so.6:_ZN13KEmailAddress19extractEmailAddressERK10QByteArrayR7QString
-libKF6Codecs.so.6:_ZN13KEmailAddress19extractEmailAddressERK7QString
-libKF6Codecs.so.6:_ZN13KEmailAddress19extractEmailAddressERK7QStringRS0_
-libKF6Codecs.so.6:_ZN13KEmailAddress20isValidSimpleAddressERK7QString
-libKF6Codecs.so.6:_ZN13KEmailAddress20quoteNameIfNecessaryERK7QString
-libKF6Codecs.so.6:_ZN13KEmailAddress24emailParseResultToStringENS_16EmailParseResultE
-libKF6Codecs.so.6:_ZN13KEmailAddress26extractEmailAddressAndNameERK7QStringRS0_S3_
-libKF6Codecs.so.6:_ZN13KEmailAddress26simpleEmailAddressErrorMsgEv
-libKF6Codecs.so.6:_ZN13KEmailAddress30normalizeAddressesAndDecodeIdnERK7QString
-libKF6Codecs.so.6:_ZN13KEmailAddress30normalizeAddressesAndEncodeIdnERK7QString
-libKF6Codecs.so.6:_ZN13KEmailAddress5toIdnERK7QString
-libKF6Codecs.so.6:_ZN13KEmailAddress7fromIdnERK7QString
-libKF6Codecs.so.6:_ZN15KEncodingProber13setProberTypeENS_10ProberTypeE
-libKF6Codecs.so.6:_ZN15KEncodingProber17nameForProberTypeENS_10ProberTypeE
-libKF6Codecs.so.6:_ZN15KEncodingProber17proberTypeForNameERK7QString
-libKF6Codecs.so.6:_ZN15KEncodingProber4feedE14QByteArrayView
-libKF6Codecs.so.6:_ZN15KEncodingProber5resetEv
-libKF6Codecs.so.6:_ZN15KEncodingProberC1ENS_10ProberTypeE
-libKF6Codecs.so.6:_ZN15KEncodingProberC2ENS_10ProberTypeE
-libKF6Codecs.so.6:_ZN15KEncodingProberD1Ev
-libKF6Codecs.so.6:_ZN15KEncodingProberD2Ev
-libKF6Codecs.so.6:_ZN7KCodecs12base45DecodeE14QByteArrayView
-libKF6Codecs.so.6:_ZN7KCodecs12base64DecodeE14QByteArrayView
-libKF6Codecs.so.6:_ZN7KCodecs12base64DecodeE14QByteArrayViewR10QByteArray
-libKF6Codecs.so.6:_ZN7KCodecs12base64EncodeE14QByteArrayView
-libKF6Codecs.so.6:_ZN7KCodecs12base64EncodeE14QByteArrayViewR10QByteArrayb
-libKF6Codecs.so.6:_ZN7KCodecs19decodeRFC2047StringE11QStringView
-libKF6Codecs.so.6:_ZN7KCodecs19decodeRFC2047StringE14QByteArrayViewP10QByteArrayRKS1_NS_13CharsetOptionE
-libKF6Codecs.so.6:_ZN7KCodecs19encodeRFC2047StringE11QStringViewRK10QByteArray
-libKF6Codecs.so.6:_ZN7KCodecs21quotedPrintableDecodeE14QByteArrayView
-libKF6Codecs.so.6:_ZN7KCodecs21quotedPrintableDecodeE14QByteArrayViewR10QByteArray
-libKF6Codecs.so.6:_ZN7KCodecs21quotedPrintableEncodeE14QByteArrayViewR10QByteArrayb
-libKF6Codecs.so.6:_ZN7KCodecs21quotedPrintableEncodeE14QByteArrayViewb
-libKF6Codecs.so.6:_ZN7KCodecs5Codec12codecForNameE14QByteArrayView
-libKF6Codecs.so.6:_ZN7KCodecs7DecoderC1ENS_5Codec11NewlineTypeE
-libKF6Codecs.so.6:_ZN7KCodecs7DecoderC2ENS_5Codec11NewlineTypeE
-libKF6Codecs.so.6:_ZN7KCodecs7DecoderD0Ev
-libKF6Codecs.so.6:_ZN7KCodecs7DecoderD1Ev
-libKF6Codecs.so.6:_ZN7KCodecs7DecoderD2Ev
-libKF6Codecs.so.6:_ZN7KCodecs7Encoder17flushOutputBufferERPcPKc
-libKF6Codecs.so.6:_ZN7KCodecs7Encoder5writeEcRPcPKc
-libKF6Codecs.so.6:_ZN7KCodecs7Encoder9writeCRLFERPcPKc
-libKF6Codecs.so.6:_ZN7KCodecs7EncoderC1ENS_5Codec11NewlineTypeE
-libKF6Codecs.so.6:_ZN7KCodecs7EncoderC2ENS_5Codec11NewlineTypeE
-libKF6Codecs.so.6:_ZN7KCodecs7EncoderD0Ev
-libKF6Codecs.so.6:_ZN7KCodecs7EncoderD1Ev
-libKF6Codecs.so.6:_ZN7KCodecs7EncoderD2Ev
-libKF6Codecs.so.6:_ZN7KCodecs8uudecodeE14QByteArrayView
-libKF6Codecs.so.6:_ZN7KCodecs8uudecodeE14QByteArrayViewR10QByteArray
-libKF6Codecs.so.6:_ZN9KCharsets10fromEntityE11QStringView
-libKF6Codecs.so.6:_ZN9KCharsets10fromEntityE11QStringViewRi
-libKF6Codecs.so.6:_ZN9KCharsets15resolveEntitiesERK7QString
-libKF6Codecs.so.6:_ZN9KCharsets8charsetsEv
-libKF6Codecs.so.6:_ZN9KCharsets8toEntityERK5QChar
-libKF6Codecs.so.6:_ZN9KCharsetsC1Ev
-libKF6Codecs.so.6:_ZN9KCharsetsC2Ev
-libKF6Codecs.so.6:_ZN9KCharsetsD1Ev
-libKF6Codecs.so.6:_ZN9KCharsetsD2Ev
-libKF6Codecs.so.6:_ZNK15KEncodingProber10confidenceEv
-libKF6Codecs.so.6:_ZNK15KEncodingProber10proberTypeEv
-libKF6Codecs.so.6:_ZNK15KEncodingProber5stateEv
-libKF6Codecs.so.6:_ZNK15KEncodingProber8encodingEv
-libKF6Codecs.so.6:_ZNK7KCodecs5Codec6decodeE14QByteArrayViewNS0_11NewlineTypeE
-libKF6Codecs.so.6:_ZNK7KCodecs5Codec6decodeERPKcS2_RPcS2_NS0_11NewlineTypeE
-libKF6Codecs.so.6:_ZNK7KCodecs5Codec6encodeE14QByteArrayViewNS0_11NewlineTypeE
-libKF6Codecs.so.6:_ZNK7KCodecs5Codec6encodeERPKcS2_RPcS2_NS0_11NewlineTypeE
-libKF6Codecs.so.6:_ZNK9KCharsets15encodingForNameERK7QString
-libKF6Codecs.so.6:_ZNK9KCharsets17encodingsByScriptEv
-libKF6Codecs.so.6:_ZNK9KCharsets22availableEncodingNamesEv
-libKF6Codecs.so.6:_ZNK9KCharsets22descriptionForEncodingE11QStringView
-libKF6Codecs.so.6:_ZNK9KCharsets24descriptiveEncodingNamesEv
+libKF6Codecs.so.6:KEmailAddress::compareEmail(QString const&, QString const&, bool)
+libKF6Codecs.so.6:KEmailAddress::splitAddress(QByteArray const&, QByteArray&, QByteArray&, QByteArray&)
+libKF6Codecs.so.6:KEmailAddress::splitAddress(QString const&, QString&, QString&, QString&)
+libKF6Codecs.so.6:KEmailAddress::isValidAddress(QString const&)
+libKF6Codecs.so.6:KEmailAddress::decodeMailtoUrl(QUrl const&)
+libKF6Codecs.so.6:KEmailAddress::encodeMailtoUrl(QString const&)
+libKF6Codecs.so.6:KEmailAddress::splitAddressList(QString const&)
+libKF6Codecs.so.6:KEmailAddress::firstEmailAddress(QByteArray const&)
+libKF6Codecs.so.6:KEmailAddress::firstEmailAddress(QByteArray const&, QString&)
+libKF6Codecs.so.6:KEmailAddress::firstEmailAddress(QString const&)
+libKF6Codecs.so.6:KEmailAddress::firstEmailAddress(QString const&, QString&)
+libKF6Codecs.so.6:KEmailAddress::normalizedAddress(QString const&, QString const&, QString const&)
+libKF6Codecs.so.6:KEmailAddress::isValidAddressList(QString const&, QString&)
+libKF6Codecs.so.6:KEmailAddress::extractEmailAddress(QByteArray const&)
+libKF6Codecs.so.6:KEmailAddress::extractEmailAddress(QByteArray const&, QString&)
+libKF6Codecs.so.6:KEmailAddress::extractEmailAddress(QString const&)
+libKF6Codecs.so.6:KEmailAddress::extractEmailAddress(QString const&, QString&)
+libKF6Codecs.so.6:KEmailAddress::isValidSimpleAddress(QString const&)
+libKF6Codecs.so.6:KEmailAddress::quoteNameIfNecessary(QString const&)
+libKF6Codecs.so.6:KEmailAddress::emailParseResultToString(KEmailAddress::EmailParseResult)
+libKF6Codecs.so.6:KEmailAddress::extractEmailAddressAndName(QString const&, QString&, QString&)
+libKF6Codecs.so.6:KEmailAddress::simpleEmailAddressErrorMsg()
+libKF6Codecs.so.6:KEmailAddress::normalizeAddressesAndDecodeIdn(QString const&)
+libKF6Codecs.so.6:KEmailAddress::normalizeAddressesAndEncodeIdn(QString const&)
+libKF6Codecs.so.6:KEmailAddress::toIdn(QString const&)
+libKF6Codecs.so.6:KEmailAddress::fromIdn(QString const&)
+libKF6Codecs.so.6:KEncodingProber::setProberType(KEncodingProber::ProberType)
+libKF6Codecs.so.6:KEncodingProber::nameForProberType(KEncodingProber::ProberType)
+libKF6Codecs.so.6:KEncodingProber::proberTypeForName(QString const&)
+libKF6Codecs.so.6:KEncodingProber::feed(QByteArrayView)
+libKF6Codecs.so.6:KEncodingProber::reset()
+libKF6Codecs.so.6:KEncodingProber::KEncodingProber(KEncodingProber::ProberType)
+libKF6Codecs.so.6:KEncodingProber::KEncodingProber(KEncodingProber::ProberType)
+libKF6Codecs.so.6:KEncodingProber::~KEncodingProber()
+libKF6Codecs.so.6:KEncodingProber::~KEncodingProber()
+libKF6Codecs.so.6:KCodecs::base45Decode(QByteArrayView)
+libKF6Codecs.so.6:KCodecs::base64Decode(QByteArrayView)
+libKF6Codecs.so.6:KCodecs::base64Decode(QByteArrayView, QByteArray&)
+libKF6Codecs.so.6:KCodecs::base64Encode(QByteArrayView)
+libKF6Codecs.so.6:KCodecs::base64Encode(QByteArrayView, QByteArray&, bool)
+libKF6Codecs.so.6:KCodecs::decodeRFC2047String(QStringView)
+libKF6Codecs.so.6:KCodecs::decodeRFC2047String(QByteArrayView, QByteArray*, QByteArray const&, KCodecs::CharsetOption)
+libKF6Codecs.so.6:KCodecs::encodeRFC2047String(QStringView, QByteArray const&)
+libKF6Codecs.so.6:KCodecs::quotedPrintableDecode(QByteArrayView)
+libKF6Codecs.so.6:KCodecs::quotedPrintableDecode(QByteArrayView, QByteArray&)
+libKF6Codecs.so.6:KCodecs::quotedPrintableEncode(QByteArrayView, QByteArray&, bool)
+libKF6Codecs.so.6:KCodecs::quotedPrintableEncode(QByteArrayView, bool)
+libKF6Codecs.so.6:KCodecs::Codec::codecForName(QByteArrayView)
+libKF6Codecs.so.6:KCodecs::Decoder::Decoder(KCodecs::Codec::NewlineType)
+libKF6Codecs.so.6:KCodecs::Decoder::Decoder(KCodecs::Codec::NewlineType)
+libKF6Codecs.so.6:KCodecs::Decoder::~Decoder()
+libKF6Codecs.so.6:KCodecs::Decoder::~Decoder()
+libKF6Codecs.so.6:KCodecs::Decoder::~Decoder()
+libKF6Codecs.so.6:KCodecs::Encoder::flushOutputBuffer(char*&, char const*)
+libKF6Codecs.so.6:KCodecs::Encoder::write(char, char*&, char const*)
+libKF6Codecs.so.6:KCodecs::Encoder::writeCRLF(char*&, char const*)
+libKF6Codecs.so.6:KCodecs::Encoder::Encoder(KCodecs::Codec::NewlineType)
+libKF6Codecs.so.6:KCodecs::Encoder::Encoder(KCodecs::Codec::NewlineType)
+libKF6Codecs.so.6:KCodecs::Encoder::~Encoder()
+libKF6Codecs.so.6:KCodecs::Encoder::~Encoder()
+libKF6Codecs.so.6:KCodecs::Encoder::~Encoder()
+libKF6Codecs.so.6:KCodecs::uudecode(QByteArrayView)
+libKF6Codecs.so.6:KCodecs::uudecode(QByteArrayView, QByteArray&)
+libKF6Codecs.so.6:KCharsets::fromEntity(QStringView)
+libKF6Codecs.so.6:KCharsets::fromEntity(QStringView, int&)
+libKF6Codecs.so.6:KCharsets::resolveEntities(QString const&)
+libKF6Codecs.so.6:KCharsets::charsets()
+libKF6Codecs.so.6:KCharsets::toEntity(QChar const&)
+libKF6Codecs.so.6:KCharsets::KCharsets()
+libKF6Codecs.so.6:KCharsets::KCharsets()
+libKF6Codecs.so.6:KCharsets::~KCharsets()
+libKF6Codecs.so.6:KCharsets::~KCharsets()
+libKF6Codecs.so.6:KEncodingProber::confidence() const
+libKF6Codecs.so.6:KEncodingProber::proberType() const
+libKF6Codecs.so.6:KEncodingProber::state() const
+libKF6Codecs.so.6:KEncodingProber::encoding() const
+libKF6Codecs.so.6:KCodecs::Codec::decode(QByteArrayView, KCodecs::Codec::NewlineType) const
+libKF6Codecs.so.6:KCodecs::Codec::decode(char const*&, char const*, char*&, char const*, KCodecs::Codec::NewlineType) const
+libKF6Codecs.so.6:KCodecs::Codec::encode(QByteArrayView, KCodecs::Codec::NewlineType) const
+libKF6Codecs.so.6:KCodecs::Codec::encode(char const*&, char const*, char*&, char const*, KCodecs::Codec::NewlineType) const
+libKF6Codecs.so.6:KCharsets::encodingForName(QString const&) const
+libKF6Codecs.so.6:KCharsets::encodingsByScript() const
+libKF6Codecs.so.6:KCharsets::availableEncodingNames() const
+libKF6Codecs.so.6:KCharsets::descriptionForEncoding(QStringView) const
+libKF6Codecs.so.6:KCharsets::descriptiveEncodingNames() const
